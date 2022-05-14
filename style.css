@@ -77,7 +77,7 @@ input[type=text], input[type=email], select, input[type=tel] {
     outline: 0;
   }
 
-input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus{
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus {
     border: 2px solid rgba(22, 22, 92, 0.678);
     border-radius: 5px;
 }
@@ -93,4 +93,38 @@ input[id="zip"] {
     width: 50%;
     margin-top: .75rem;
     margin-bottom: .75rem;
+}
+
+.letters {
+    padding: 1rem;
+}
+
+textarea {
+    border: none;
+    background-color: rgba(241, 241, 241, 0.801);
+    width: 100%;
+    padding-bottom: 4rem;
+    border-radius: 5px;
+}
+
+#field2 {
+    border-bottom: none;
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    width: 100%;
+    background-color: rgba(31, 189, 189, 0.705);
+    color: white;
+    border-radius: 5px;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+#copyright {
+    text-align: center;
+    color: rgb(192, 173, 173);
+    padding: 1.5rem;
+    font-size: .75rem;
 }

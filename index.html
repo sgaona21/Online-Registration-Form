@@ -51,23 +51,34 @@
 
     </fieldset>
 
-    <fieldset>
+    <fieldset id="field2">
 
 
 
         <legend>Newsletter</legend>
 
+        <div>
+        <label >Select the newsletters you would like to receive</label>
+        </div> <br>
 
-        <label>Select the newsletters you would like to receive</label><br>
-        <input type="checkbox" id="hyper" value="receive_html" name="html_news"><label class="letters" for="hyper">HTML News</label><br>
+        <div class>
+        <input type="checkbox" id="hyper" value="receive_html" name="html_news"><label class="letters" for="hyper">HTML News</label> 
+        </div><br>
         <input type="checkbox" id="css" value="receive_css" name="css_news"><label class="letters" for="css">CSS News</label><br>
-        <input type="checkbox" id="javascript" value="receive_javascript" name="javascript_news"><label class="letters" for="javascript">Javascript News</label><br>
+        <br>
+        <input type="checkbox" id="javascript" value="receive_javascript" name="javascript_news"><label class="letters" for="javascript">Javascript News</label> <br>
+        <br>
 
         <label>Newsletter format</label><br>
+        <br>
         <input type="radio" id="html-format" value="html_format" name="format_type"><label for="html-format" class="letters">HTML</label><br>
-        <input type="radio" id="plaintext" value="plain_format" name="format_type"><label for="plaintext" class="letters">Plain text</label><br>
+        <br>
+        <input type="radio" id="plaintext" value="plain_format" name="format_type"><label for="plaintext" class="letters">Plain text</label>
+        <br>
+        <br>
 
         <label>Other topics you'd like to hear about</label><br>
+        <br>
         <textarea id="topics" name="other_topics"></textarea><br>
 
     </fieldset>    
@@ -76,7 +87,7 @@
 
     </form>
 
-    <p><em>Copyright The Code Review</em></p>
+    <p id="copyright"><em>Copyright The Code Review</em></p>
 
 </body>
 </html>
