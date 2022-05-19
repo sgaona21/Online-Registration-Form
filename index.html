@@ -65,7 +65,8 @@
                     <label for="state">State</label>
                     </div>
                     <div class="desktop-mode-inputs">
-                    <select id="state" name="user_state">
+                    <select id="state" name="user_state" required>
+                        <option value="" disabled selected>Choose State</option>
                         <option value="arizona">Arizona</option>
                         <option value="alaska">Alaska</option>
                         <option value="california">California</option>
@@ -107,7 +108,7 @@
                 <br>
                 <textarea id="topics" name="other_topics"></textarea><br>
         </fieldset>    
-            <button type="submit">Sign Up</button>
+                <input type="submit" id="submit" value="Sign Up">
     </form>
 
     <p id="copyright"><em>Copyright The Code Review</em></p>

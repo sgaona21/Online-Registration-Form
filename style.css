@@ -74,6 +74,10 @@ input[type=text], input[type=email], select, input[type=tel] {
     color: rgb(192, 173, 173)
 }
 
+select:invalid {
+    color: gray;
+} 
+
 :focus {
     outline: 0;
   }
@@ -113,7 +117,7 @@ textarea {
     border-bottom: none;
 }
 
-button {
+input[type=submit] {
     border: none;
     padding: 1rem;
     width: 100%;
