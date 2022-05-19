@@ -13,81 +13,104 @@
 
 <body>
     <h1>The Code Review</h1>
+    <div id="formbody">
     <h2>Signup for our newsletter</h2>
     <p class="signup_info">Get the latest news on how your code is doing right in your inbox</p>
 
     <form>
+        <fieldset class="field1">
+            <legend id="contact-info"> Contact Information</legend>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="name">Full Name</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="text" id="name" name="user_name" placeholder="Required ">
+                    </div>
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="email">Email Address</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="email" id="email" name="user_email" placeholder="Required ">
+                    </div>
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="tel" id="phone" name="user_phone">
+                    </div>
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="address">Street Address</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="text" id="address" name="user_address">
+                    </div>
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="city">City</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="text" id="city" name="user_city">
+                    </div>
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="state">State</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <select id="state" name="user_state">
+                        <option value="arizona">Arizona</option>
+                        <option value="alaska">Alaska</option>
+                        <option value="california">California</option>
+                        <option value="colorado">Colorado</option>
+                        <option value="texas">Texas</option>
+                    </select>  
+                    </div>  
+                </div>
+                <div class="desktop-mode">
+                    <div>
+                    <label for="zip">Zip Code</label>
+                    </div>
+                    <div class="desktop-mode-inputs">
+                    <input type="text" id="zip" name="user_zip">
+                    </div>
+                </div>    
+        </fieldset>
 
-        <fieldset>
-
-        <legend id="contact-info"> Contact Information</legend>
-
-        <label for="name">Full Name</label> <br>
-        <input type="text" id="name" name="user_name" placeholder="Required ">
-        <br>
-        <label for="email">Email Address</label><br>
-        <input type="email" id="email" name="user_email" placeholder="Required ">
-        <br>
-        <label for="phone">Phone Number</label><br>
-        <input type="tel" id="phone" name="user_phone">
-        <br>
-        <label for="address">Street Address</label><br>
-        <input type="text" id="address" name="user_address">
-        <br>
-        <label for="city">City</label><br>
-        <input type="text" id="city" name="user_city">
-        <br>
-        <label for="state">State</label><br>
-        <select id="state" name="user_state">
-            <option value="arizona">Arizona</option>
-            <option value="alaska">Alaska</option>
-            <option value="california">California</option>
-            <option value="colorado">Colorado</option>
-            <option value="Texas">Texas</option>
-        </select>    
-        <br>
-        <label for="zip">Zip Code</label><br>
-        <input type="text" id="zip" name="user_zip">
-
-    </fieldset>
-
-    <fieldset id="field2">
-
-
-
-        <legend>Newsletter</legend>
-
-        <div>
-        <label >Select the newsletters you would like to receive</label>
-        </div> <br>
-
-        <div class>
-        <input type="checkbox" id="hyper" value="receive_html" name="html_news"><label class="letters" for="hyper">HTML News</label> 
-        </div><br>
-        <input type="checkbox" id="css" value="receive_css" name="css_news"><label class="letters" for="css">CSS News</label><br>
-        <br>
-        <input type="checkbox" id="javascript" value="receive_javascript" name="javascript_news"><label class="letters" for="javascript">Javascript News</label> <br>
-        <br>
-
-        <label>Newsletter format</label><br>
-        <br>
-        <input type="radio" id="html-format" value="html_format" name="format_type"><label for="html-format" class="letters">HTML</label><br>
-        <br>
-        <input type="radio" id="plaintext" value="plain_format" name="format_type"><label for="plaintext" class="letters">Plain text</label>
-        <br>
-        <br>
-
-        <label>Other topics you'd like to hear about</label><br>
-        <br>
-        <textarea id="topics" name="other_topics"></textarea><br>
-
-    </fieldset>    
-
-        <button type="submit">Sign Up</button>
-
+        <fieldset id="field2">
+            <legend>Newsletter</legend>
+                <div>
+                <label >Select the newsletters you would like to receive</label>
+                </div> <br>
+                <div class>
+                <input type="checkbox" id="hyper" value="receive_html" name="news_type"><label class="letters" for="hyper">HTML News</label> 
+                </div><br>
+                <input type="checkbox" id="css" value="receive_css" name="news_type"><label class="letters" for="css">CSS News</label><br>
+                <br>
+                <input type="checkbox" id="javascript" value="receive_javascript" name="news_type"><label class="letters" for="javascript">Javascript News</label> <br>
+                <br>
+                <label>Newsletter format</label><br>
+                <br>
+                <input type="radio" id="html-format" value="html_format" name="format_type"><label for="html-format" class="letters">HTML</label><br>
+                <br>
+                <input type="radio" id="plaintext" value="plain_format" name="format_type"><label for="plaintext" class="letters">Plain text</label>
+                <br>
+                <br>
+                <label for="topics">Other topics you'd like to hear about</label><br>
+                <br>
+                <textarea id="topics" name="other_topics"></textarea><br>
+        </fieldset>    
+            <button type="submit">Sign Up</button>
     </form>
 
     <p id="copyright"><em>Copyright The Code Review</em></p>
-
+     </div>
 </body>
 </html>
