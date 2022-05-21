@@ -82,7 +82,7 @@ select:invalid {
     outline: 0;
   }
 
-input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus {
+input[type=text]:focus, input[type=tel]:focus, input[type=email]:focus, textarea:focus, select:focus {
     border: 2px solid rgba(22, 22, 92, 0.678);
     border-radius: 5px;
 }
