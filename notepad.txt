@@ -1,0 +1,9 @@
+phone number: not accept letters 
+not accept any dashes 
+auto input dashes where necessary 
+show error if phone number is incorrect(not enough digits,)
+dont allow more than 10 digits 
+Numpad5Numpad5     
+
+shows green checkmarks for completed feilds 
+show a red ex for incomplete feilds
